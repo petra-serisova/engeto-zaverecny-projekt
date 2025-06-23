@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <!-- CHOOSE BUTTON SECTION -->
+    <section class="choose-button">
+      <div class="movies-buttons">
+        <div class="movies-button">
+          <a href="index.html" class="button">Úvodní strana</a>
+        </div>
+        <div class="roller-button">
+          <select name="roller" id="roller">
+            <option value="" disabled selected>Vyberte možnost</option>
+            <option value="girl">Girl</option>
+            <option value="boy">Boy</option>
+            <option value="avengers">Avengers</option>
+            <option value="horor">Horor</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIES SECTION -->
+    <section class="movies"></section>
+
+    <script src="script-api.js"></script>
+  </body>
+</html>

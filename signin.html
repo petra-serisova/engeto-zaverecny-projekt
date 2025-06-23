@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <title>Sign in</title>
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <nav class="navigation navigation-signin">
+      <div class="navigation-wrapper">
+        <div class="logo-wrapper">
+          <img class="logo" src="images/netflix-logo.png" alt="Logo netflixu" />
+        </div>
+        <div class="menu-button">
+          <a href="index.html" class="button">Úvodní strana</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-signin">
+      <form>
+        <input
+          type="text"
+          placeholder="Křestní jméno"
+          class="input-content"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Příjmení"
+          class="input-content"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Přihlasovací email"
+          class="input-content"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Vaše heslo"
+          class="input-content"
+          id="your-password"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Heslo znovu"
+          class="input-content"
+          id="your-password-control"
+          required
+        />
+        <input type="submit" value="Odeslat" class="button" />
+      </form>
+    </section>
+    <script src="script-login.js" defer></script>
+  </body>
+</html>

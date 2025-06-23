@@ -1,0 +1,284 @@
+/* general */
+
+:root {
+  --primary-background: rgb(1, 1, 1);
+  --primary-red: rgb(214, 28, 28);
+  --secondary-red: rgb(227, 57, 57);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-background);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  ----------------- index.html ----------------- */
+/* nav ------------------- */
+.navigation {
+  background-color: var(--primary-background);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+}
+
+.navigation-wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 150px;
+}
+
+.button {
+  background-color: var(--primary-red);
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu-button a,
+.button-wrapper a,
+.movies-button a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--secondary-red);
+}
+
+/* hero ----------------------------*/
+.hero {
+  margin-top: 79px;
+  height: calc(100vh - 79px);
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    ),
+    url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  width: 90%;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text h2 {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.hero-text p {
+  margin-top: 15px;
+}
+
+.hero-buttons {
+  margin-top: 15px;
+}
+
+.hero-buttons form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-content {
+  border: 1px solid white;
+  background-color: var(--primary-background);
+  color: white;
+  padding: 10px 15px;
+  flex: 1;
+}
+
+/* info ------------------ */
+
+.info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-item {
+  width: 90%;
+}
+
+.img-item img {
+  transition: transform 0.25s ease-in-out;
+}
+
+.img-item:hover img {
+  transform: scale(1.05);
+}
+
+.button-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* icon ------------------------------ */
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  color: var(--primary-red);
+
+  transition: all 0.3s linear;
+
+  cursor: pointer;
+}
+
+.scroll-to-top i {
+  font-size: 50px;
+}
+
+/* footer -------------------- */
+
+.footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 90%;
+}
+
+.footer-item {
+  margin-top: 10px;
+}
+
+.footer-item a {
+  color: white;
+}
+
+/*  ----------------- movies ----------------- */
+/* choose button section */
+.choose-button {
+  margin-top: 50px;
+}
+.movies-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roller-button {
+  margin-top: 30px;
+}
+
+.roller-button select {
+  background-color: var(--primary-background);
+  color: white;
+  border: 1px solid var(--primary-red);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+select:invalid {
+  color: gray;
+}
+
+/* movies section */
+.movies {
+  min-height: 100vh;
+  margin: 60px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-box {
+  width: 200px;
+  rotate: 5deg;
+  transition: 0.3s;
+}
+
+.movie-box:hover {
+  transform: scale(1.05);
+  rotate: 0deg;
+}
+
+/* ----------------- signin ----------------- */
+
+.navigation-signin {
+  position: relative;
+}
+
+.hero-signin {
+  height: calc(100vh - 79px);
+
+  /* zarovnani na stred stranky */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-signin form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 15px;
+}
+
+input.input-content-ok,
+input.input-content-ok:focus {
+  border: 1px solid green;
+  outline: none;
+}
+
+input.input-content-not-ok,
+input.input-content-not-ok:focus {
+  border: 1px solid red;
+  outline: none;
+}

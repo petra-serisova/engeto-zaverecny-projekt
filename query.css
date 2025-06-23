@@ -1,0 +1,35 @@
+@media (width > 576px) {
+  .navigation-wrapper {
+    padding: 15px 20px;
+  }
+
+  .hero-box {
+    max-width: 500px;
+  }
+
+  .hero-buttons form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .img-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+
+  .footer-item {
+    width: calc((100% - 10px) / 2);
+  }
+}
+
+@media (width > 992px) {
+  .footer-item {
+    width: calc((100% - 30px) / 4);
+  }
+}
